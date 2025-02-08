@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    width: 100%;
+    height: 150px;
+    padding-top: 5px;
+}
+
+.logo{
+    flex: 40%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.links{
+    padding-top: 57px;
+    padding-right: 100px;
+}
+
+.links a{
+    color: #363433;
+    padding: 10px;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #EE3132;
+    transition: 0.3s;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 210px;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.headline{
+    background: white;
+    margin-left: 20%;
+    margin-right: 40%;
+    margin-bottom: 130px;
+    flex: 40%;
+    flex-flow: wrap;
+    border: 3px solid #EE3132;
+    border-radius: 5px;
+}
+
+.headline h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    color: #363433;
+    padding:0;
+    text-align:center;
+    margin-bottom: -10px;
+}
+
+.headline p{
+    color: gray;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#coretora{
+    color:#EE3132;
+}
+
+.contact-btn{
+    display:block;
+    background: #363433;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 300px;
+    margin-top: -190px;
+}
+
+.contact-btn:hover{
+    color: black;
+    background-color: #EE3132;
+    transition: 0.3s;
+}
+
+section1{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    border-bottom: 5px solid #363433;
+}
+
+section1 h2{
+    width: 100%;
+    font-size: 65px;
+}
+
+.bloco1{
+    flex: 50%;
+    background: #EE3132;
+    padding: 20px;
+}
+
+.bloco2{
+    flex: 50%;
+    background: #EE3132;
+    padding: 21px;
+}
+
+.card-content{
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+        /* margin-left: 25%;
+        margin-right: 25%; */
+.card-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn{
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #363433;
+}
+
+.btn:hover{
+    background: #EE3132;
+    transition: 0.5s;
+}
+
+section2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+#section2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+        /* margin-left: 25%;
+        margin-right: 25%; */
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-bottom: -150px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #363433;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid hwb(360 19% 7%);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #363433;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #363433;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #363433;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #363433;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(180deg, #EE3132, #363433);
+    text-align: center;
+    border-top: 5px solid black;
+}
+
+.logo-rodape{
+    padding: 40px;
+}
+
+.agencia{
+    color: white;
+    font-size: 38px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: green;
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.whats:hover{
+    background: rgb(0, 223, 0);
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) /*tablet*/{
+
+    .navbar{
+        display: block;
+    }
+
+    .logo{
+        margin-left: 7%;
+    }
+
+    .links{
+        margin-top: -154px;
+        margin-right: 7%;
+    }
+
+    .links a{
+        padding: 3px;
+        font-size: 26px;
+    }
+
+    .header{
+        padding-top: 150px;
+        background-image:url("../img/fundo2.jpg");
+
+    }
+    
+    .headline{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .contact-btn{
+        margin-left: 23%;
+        margin-right: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1005px) /*celular*/{
+
+    .navbar{
+        display: inline-block;
+        width: 100%;
+        height: 230px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo img{
+        width: 170px;
+        text-align: center;
+        margin-left: 80px;
+    }
+
+    .links{
+        padding: 0;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .links a{
+        padding: 15px;
+        display: none;
+    }
+
+    .links a:not(:last-child){
+        display: inline-block;
+    }
+
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 210px;
+        justify-content: center;
+        align-items: center;
+        background-image:url("../img/fundo3.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .headline{
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 130px;
+        flex: 40%;
+        flex-flow: wrap;
+        border: 3px solid #EE3132;
+        border-radius: 5px;
+    }
+    
+    .headline h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 1000;
+        font-size: 20px;
+        color: #363433;
+        padding:0;
+        text-align:center;
+        margin-bottom: -10px;
+    }
+    
+    #coretora{
+        color:#EE3132;
+    }
+    
+    .headline p{
+        color: gray;
+        text-align:center;
+        font-size: 23px;
+        padding: 20px;
+    }
+
+    .contact-btn{
+        display:block;
+        background: #363433;
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+        width: 300px;
+        margin-top: -190px;
+    }
+    
+    .contact-btn:hover{
+        color: black;
+        background-color: #EE3132;
+        transition: 0.3s;
+    }
+
+    section2, #section2{
+        display: none;
+    }
+
+    footer{
+        height: 300px;
+    }
+
+}
